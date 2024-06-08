@@ -14,7 +14,7 @@ function createSignal(initValue) {
         state = newValue;
         listeners.forEach((listener) => {
             listener()
-        }); // Вызов всех листенеров при изменении значения
+        });
     }
 
     return [
